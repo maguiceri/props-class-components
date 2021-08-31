@@ -1,10 +1,9 @@
 import React from 'react';
+import "./styles.scss"
 import Car from '../Car';
 
 class Cards extends React.Component{
-
     render() {
-
         const startups = [
             {
                 img : '',
@@ -26,12 +25,9 @@ class Cards extends React.Component{
                     )
                 }
                 )}
-
-            </div>
-            
+            </div>           
         );
     }
-
 }
 
 export default Cards;
