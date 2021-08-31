@@ -6,7 +6,7 @@ import Cards from './components/Cards';
 class App extends React.Component{
   render(){   
     return(
-      <div>
+      <div className="main">
         <Navbar />     
         <Cards />
         <h5>{'Made with <3 by'}

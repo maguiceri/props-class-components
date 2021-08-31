@@ -5,7 +5,7 @@ class Car extends React.Component {
     render() {
         const {img, title, description} = this.props.startup;
         return(
-            <div>
+            <div className="card">
                 <img src={img} />
                 <p>{title}</p>
                 <p>{description}</p>

@@ -10,10 +10,6 @@ class Navbar extends React.Component {
         }
     }
 
-    handleClick() {
-        console.log ('click')
-    }
-
     handleChange(e){
         this.setState({
             inputValue: e.target.value
@@ -21,10 +17,9 @@ class Navbar extends React.Component {
     }
     render() {
         return (
-            <nav>
-                <h1 onClick={ () => this.handleClick ()}>soy un navbar</h1>
-                <input onChange={ (e) => this.handleChange (e)} type="text" />
-                <p>Magui esta tipiando:{this.state.inputValue}</p>
+            <nav className="nav">
+                <input className="input" onChange={ (e) => this.handleChange (e)} type="text" />
+                <p className="text">Magui esta tipiando: {this.state.inputValue}</p>
             </nav>       
         );
     }
